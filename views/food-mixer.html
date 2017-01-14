@@ -6,7 +6,7 @@
                 <a href="index.html">Home</a>
             </li>
             <li>
-                <a>Food</a>
+                <a>Foods</a>
             </li>
             <li class="active">
                 <strong>Food list</strong>
@@ -19,32 +19,37 @@
 </div>
 <div class="wrapper wrapper-content animated fadeInRight">
     <div class="row">
-        <button class="btn btn-primary dim" type="button"><i class="fa fa-money"></i></button>
-    </div>
-    <div class="row">
-      <div class="col-md-3" ng-repeat="asset in assetdata.assets">
+        <div class="col-md-3" ng-repeat="food in selectedFood">
             <div class="ibox">
                 <div class="ibox-content product-box">
-
                     <div class="product-imitation">
-                        <img src="{{asset.assetType.imageUrl}}" style="max-width: 90%;" />
+                        <img src="{{food.foodItem.assetType.imageUrl}}" style="max-width: 90%;"/>
                     </div>
                     <div class="product-desc">
-                                <span class="product-price">
-                                    <i class="fa-btc"/> {{asset.amount}}
+                        <span>{{ food.foodItem.id }}</span>
+                        <pre>{{food.foodItem.assetType | json}}</pre>
+                        <span class="product-price">
+                                    <i class="fa-btc"/> {{food.foodItem.amount}}
                                 </span>
-                        <small class="text-muted">{{asset.assetType.category}}</small>
-                        <a href="#" class="product-name">   {{asset.assetType.provider.name | uppercase }}</a>
-
-
+                        <small class="text-muted">{{food.foodItem.assetType.category}}</small>
+                        <a href="#" class="product-name"> {{food.foodItem.assetType.provider.name | uppercase }}</a>
 
                         <div class="small m-t-xs">
-                            Many desktop publishing packages and web page editors now.
+                            {{ food.foodItem.assetType.description }}
                         </div>
-                        <div class="m-t text-righ">
 
-                            <a href="#" class="btn btn-xs btn-outline btn-primary">Info <i class="fa fa-long-arrow-right"></i> </a>
+                        <select name="singleSelect" id="singleSelect" ng-model="food.id" ng-change="update(food)" >
+                            <option value="">---Please select---</option> <!-- not selected / blank option -->
+                            <option ng-repeat="foodOption in assetdata.assets" value="{{foodOption.id }}">
+                                {{foodOption.assetType.title}}
+                            </option>
+                        </select>
+                        <div class="m-t text-righ">
+                            <a href="#" class="btn btn-xs btn-outline btn-primary">Info <i
+                                    class="fa fa-long-arrow-right"></i> </a>
                         </div>
+
+                        <pre>{{food.foodItem | json}}</pre>
                     </div>
                 </div>
             </div>
@@ -52,9 +57,7 @@
     </div>
 
 
-    </div>
-
-
+</div>
 
 
 </div>

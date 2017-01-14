@@ -9,11 +9,11 @@
           "id": 1,
           "name": "Rice"
         },
-        "title": "Accor",
+        "title": "Rice",
         "unitName": "points",
         "imageUrl": "http://cdn2.tmbi.com/TOH/Images/Photos/37/300x300/exps22392_TH10389D35A.jpg",
-        "category": "Accomodation",
-        "description": "Every day, AccorHotels Group welcomes the world in its 3700 hotels located in 94 countries.",
+        "category": "Glutenoids",
+        "description": "Rise is a wonderful ingredient.",
         "conversionRate": 5.00
       },
       "amount": 300.00,

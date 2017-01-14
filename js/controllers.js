@@ -64,6 +64,7 @@ angular
 
         $scope.assetdata = []
 
+        $scope.selectedFood = [];
 
         $scope.loginUser = function () {
             var user = sessionFactory.retrieveUserAssets($scope.username, $scope.password);
@@ -82,8 +83,27 @@ angular
 
                 $scope.assetdata.total = total;
             })
+
+            $scope.update = function(food) {
+                console.log(food.id)
+
+                var foodItem = $scope.assetdata.assets.filter(function(v) {
+                    return v.id == food.id
+                })
+                food.foodItem = foodItem[0]
+
+                //food.foodItem = $scope.assetdata.assets[1]
+                // use $scope.selectedItem.code and $scope.selectedItem.name here
+                // for other stuff ...
+            }
+
+            $scope.selectedFood = [
+                {title: "Please chose one item from the menu", foodItem: {}},
+                {title: "Please chose one item from the menu", foodItem: {}},
+                {title: "Please chose one item from the menu", foodItem: {}}
+            ]
         }
-        $scope.assetData()
+        $scope.assetData();
 
     })
     .controller('ngGridCtrl', ngGridCtrl)
@@ -92,6 +112,10 @@ angular
         'use strict';
 
         $scope.marketdata = []
+
+        $scope.mainPlate = {
+            item1: "Rice", item2: "Meat", item3: "fish"
+        }
 
         $scope.marketData = function () {
             $scope.marketdata = sessionFactory.getMarketData().success(function (data) {
