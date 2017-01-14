@@ -144,7 +144,7 @@ angular
         factory.getMarketData = function () {
             return $http({
                 method: 'GET',
-                url: 'data/products.json'
+                url: 'data/ingredients.json'
                 //url: 'http://localhost:8080/products'
             });
         };
