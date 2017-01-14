@@ -14,7 +14,7 @@ function config($stateProvider, $urlRouterProvider, $ocLazyLoadProvider, IdlePro
 
     $httpProvider.defaults.headers.common['Authorization'] = "Basic c3RlZmFuQHRyYXZlbGNvaW4uY29tOnBhc3N3b3Jk"
 
-    $urlRouterProvider.otherwise("/assets/assets-grid");
+    $urlRouterProvider.otherwise("/prepare/food-mixer");
 
 
 
@@ -27,7 +27,7 @@ function config($stateProvider, $urlRouterProvider, $ocLazyLoadProvider, IdlePro
 
         .state('assets', {
             abstract: true,
-            url: "/assets",
+            url: "/prepare",
             templateUrl: "views/common/content.html",
             resolve: {
                 loadPlugin: function ($ocLazyLoad) {
