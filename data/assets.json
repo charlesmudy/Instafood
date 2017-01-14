@@ -1,0 +1,79 @@
+{
+  "id": 3,
+  "assets": [
+    {
+      "id": 5,
+      "assetType": {
+        "id": 1,
+        "provider": {
+          "id": 1,
+          "name": "Accor"
+        },
+        "title": "Accor",
+        "unitName": "points",
+        "imageUrl": "/img/loyalty/Accor.png",
+        "category": "Accomodation",
+        "description": "Every day, AccorHotels Group welcomes the world in its 3700 hotels located in 94 countries.",
+        "conversionRate": 5.00
+      },
+      "amount": 300.00,
+      "value": 1500.0000
+    },
+    {
+      "id": 6,
+      "assetType": {
+        "id": 2,
+        "provider": {
+          "id": 2,
+          "name": "Hilton"
+        },
+        "title": "Hilton",
+        "unitName": "points",
+        "imageUrl": "/img/loyalty/hilton3.jpg",
+        "category": "Accomodation",
+        "description": "Book hotels and resorts directly with Hilton to make your next business trip or vacation more relaxing and affordable.",
+        "conversionRate": 8.00
+      },
+      "amount": 450.00,
+      "value": 3600.0000
+    },
+    {
+      "id": 7,
+      "assetType": {
+        "id": 3,
+        "provider": {
+          "id": 3,
+          "name": "Flying Blue"
+        },
+        "title": "Flying Blue Silver",
+        "unitName": "points",
+        "imageUrl": "/img/loyalty/fbsil.jpeg",
+        "category": "Transportation",
+        "description": "Bring home Miles when flying with AIR FRANCE, KLM, Kenya Airways, HOP!, Transavia, Kenya Airways, AirCalin, Tarom and many more partner airlines.",
+        "conversionRate": 3.00
+      },
+      "amount": 800.00,
+      "value": 2400.0000
+    },
+    {
+      "id": 8,
+      "assetType": {
+        "id": 4,
+        "provider": {
+          "id": 3,
+          "name": "Flying Blue"
+        },
+        "title": "Flying Blue Platinum",
+        "unitName": "points",
+        "imageUrl": "/img/loyalty/fbplat.png",
+        "category": "Transportation",
+        "description": "Bring home Miles when flying with AIR FRANCE, KLM, Kenya Airways, HOP!, Transavia, Kenya Airways, AirCalin, Tarom and many more partner airlines.",
+        "conversionRate": 4.00
+      },
+      "amount": 1200.00,
+      "value": 4800.0000
+    }
+  ],
+  "name": "Stefan Polisevschi",
+  "email": "stefan@travelcoin.com"
+}
