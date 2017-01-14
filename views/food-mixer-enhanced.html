@@ -19,10 +19,6 @@
 </div>
 <div class="wrapper wrapper-content animated fadeInRight">
     <div class="row">
-        <button class="btn btn-primary dim" type="button"><i class="fa fa-money"></i></button>
-    </div>
-    <div class="row">
-        <pre></pre>
         <div class="col-md-3" ng-repeat="food in userService.selectedFood">
             <div class="ibox">
                 <div class="ibox-content product-box">
@@ -35,7 +31,7 @@
                                 </span>
                         <select name="singleSelect" id="singleSelect" ng-model="food.id" ng-change="update(food)">
                             <option value="">---select spices---</option> <!-- not selected / blank option -->
-                            <option ng-repeat="spice in spices" value="{{foodOption.id }}">
+                            <option ng-repeat="spice in spices" value="{{spice.id }}">
                                 {{spice.title}}
                             </option>
                         </select>
