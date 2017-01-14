@@ -44,16 +44,16 @@ function config($stateProvider, $urlRouterProvider, $ocLazyLoadProvider, IdlePro
             }
         })
         .state('assets.assets_grid', {
-            url: "/assets-grid",
-            templateUrl: "views/assets_grid.html",
-            data: { pageTitle: 'Assets list' },
+            url: "/food-mixer",
+            templateUrl: "views/food-mixer.html",
+            data: { pageTitle: 'Mixer' },
             controller: 'AssetController'
         })
 
         .state('assets.assets_grid_market', {
-            url: "/assets-grid-market",
-            templateUrl: "views/assets_grid_market.html",
-            data: { pageTitle: 'Market' },
+            url: "/food-mixer-enhanced",
+            templateUrl: "views/food-mixer-enhanced.html",
+            data: { pageTitle: 'Spicy Up' },
             controller: 'MarketController'
         })
 
