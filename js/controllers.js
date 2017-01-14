@@ -131,8 +131,8 @@ angular
         factory.retrieveUserAssets = function (username, password) {
             return $http({
                 method: 'GET',
-                url: 'http://travelcoin-api.herokuapp.com/authenticate',
-                url: 'data/assets.json',
+                // url: 'http://travelcoin-api.herokuapp.com/authenticate',
+                url: 'data/food.json',
                 //url: 'http://localhost:8080/authenticate',
                 //data: $.param({email: username}),
                 //headers: {'Content-Type': 'application/x-www-form-urlencoded'}

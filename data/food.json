@@ -7,11 +7,11 @@
         "id": 1,
         "provider": {
           "id": 1,
-          "name": "Accor"
+          "name": "Rice"
         },
         "title": "Accor",
         "unitName": "points",
-        "imageUrl": "/img/loyalty/Accor.png",
+        "imageUrl": "http://cdn2.tmbi.com/TOH/Images/Photos/37/300x300/exps22392_TH10389D35A.jpg",
         "category": "Accomodation",
         "description": "Every day, AccorHotels Group welcomes the world in its 3700 hotels located in 94 countries.",
         "conversionRate": 5.00
@@ -25,11 +25,11 @@
         "id": 2,
         "provider": {
           "id": 2,
-          "name": "Hilton"
+          "name": "Beans"
         },
-        "title": "Hilton",
+        "title": "Beans",
         "unitName": "points",
-        "imageUrl": "/img/loyalty/hilton3.jpg",
+        "imageUrl": "http://cdn2.tmbi.com/TOH/Images/Photos/37/300x300/Slow-Cooked-Boston-Beans_exps173531_SD143203B10_25_2bC_RMS.jpg",
         "category": "Accomodation",
         "description": "Book hotels and resorts directly with Hilton to make your next business trip or vacation more relaxing and affordable.",
         "conversionRate": 8.00
@@ -43,11 +43,11 @@
         "id": 3,
         "provider": {
           "id": 3,
-          "name": "Flying Blue"
+          "name": "Fish"
         },
-        "title": "Flying Blue Silver",
+        "title": "Fish",
         "unitName": "points",
-        "imageUrl": "/img/loyalty/fbsil.jpeg",
+        "imageUrl": "http://4.bp.blogspot.com/_JzCfhBWA1AA/S-ngWWZrX4I/AAAAAAAAAZs/MpPgT0M449I/s400/fish+cooked.jpg",
         "category": "Transportation",
         "description": "Bring home Miles when flying with AIR FRANCE, KLM, Kenya Airways, HOP!, Transavia, Kenya Airways, AirCalin, Tarom and many more partner airlines.",
         "conversionRate": 3.00
@@ -61,11 +61,11 @@
         "id": 4,
         "provider": {
           "id": 3,
-          "name": "Flying Blue"
+          "name": "Meat"
         },
-        "title": "Flying Blue Platinum",
+        "title": "Meat",
         "unitName": "points",
-        "imageUrl": "/img/loyalty/fbplat.png",
+        "imageUrl": "http://www.scottsofcarshalton.co.uk/wp-content/uploads/2016/03/lamb-platters-300x300.jpg",
         "category": "Transportation",
         "description": "Bring home Miles when flying with AIR FRANCE, KLM, Kenya Airways, HOP!, Transavia, Kenya Airways, AirCalin, Tarom and many more partner airlines.",
         "conversionRate": 4.00
