@@ -39,6 +39,7 @@ function UserService($log, sessionFactory) {
     var userService = this;
     var user = {name: ''};
     this.user = {name: ''}
+    userService.selectedFood = []
 }
 
 var mainController = function AssetController($scope, userService) {
@@ -91,7 +92,7 @@ angular
                     return v.id == food.id
                 })
                 food.foodItem = foodItem[0]
-
+                $scope.userService.selectedFood = $scope.selectedFood
                 //food.foodItem = $scope.assetdata.assets[1]
                 // use $scope.selectedItem.code and $scope.selectedItem.name here
                 // for other stuff ...
@@ -108,18 +109,18 @@ angular
     })
     .controller('ngGridCtrl', ngGridCtrl)
     .controller('translateCtrl', translateCtrl)
-    .controller('MarketController', function MarketController($scope, sessionFactory) {
+    .controller('MarketController', function MarketController($scope, sessionFactory, userService) {
         'use strict';
-
-        $scope.marketdata = []
+        $scope.userService = userService;
+        $scope.spices = []
 
         $scope.mainPlate = {
             item1: "Rice", item2: "Meat", item3: "fish"
         }
 
         $scope.marketData = function () {
-            $scope.marketdata = sessionFactory.getMarketData().success(function (data) {
-                $scope.marketdata = data
+            $scope.spices = sessionFactory.getMarketData().success(function (data) {
+                $scope.spices = data
             })
         }
 
