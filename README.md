@@ -1,1 +1,3 @@
-# travelcoin-ui
+# Instafood
+
+Create your personalized meal
