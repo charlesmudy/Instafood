@@ -33,7 +33,7 @@
                         <span class="product-price">
                                     <i class="fa-btc"/> {{food.foodItem.amount}}
                                 </span>
-                        <select name="singleSelect" id="singleSelect" ng-model="food.id" ng-change="update(food)" >
+                        <select name="singleSelect" id="singleSelect" ng-model="food.id" ng-change="update(food)">
                             <option value="">---select spices---</option> <!-- not selected / blank option -->
                             <option ng-repeat="spice in spices" value="{{foodOption.id }}">
                                 {{spice.title}}
@@ -47,6 +47,16 @@
                 </div>
             </div>
         </div>
+
+        <pre>
+            {{ userService.selectedFood | json }}
+
+            {
+                "id": "",
+                "foodItem": {},
+                "spice": ""
+            }
+        </pre>
     </div>
 
 

@@ -27,7 +27,6 @@
                     </div>
                     <div class="product-desc">
                         <span>{{ food.foodItem.id }}</span>
-                        <pre>{{food.foodItem.assetType | json}}</pre>
                         <span class="product-price">
                                     <i class="fa-btc"/> {{food.foodItem.amount}}
                                 </span>
@@ -37,8 +36,10 @@
                         <div class="small m-t-xs">
                             {{ food.foodItem.assetType.description }}
                         </div>
-
-                        <select name="singleSelect" id="singleSelect" ng-model="food.id" ng-change="update(food)" >
+                        <!-- ng-model stored teh food.id nto the current object in the array-->
+                        <select name="singleSelect" id="singleSelect"
+                                ng-model="food.id"
+                                ng-change="update(food)" >
                             <option value="">---Please select---</option> <!-- not selected / blank option -->
                             <option ng-repeat="foodOption in assetdata.assets" value="{{foodOption.id }}">
                                 {{foodOption.assetType.title}}
@@ -55,7 +56,7 @@
             </div>
         </div>
         <div class="col-md-3">
-            <a ui-sref="assets.assets_grid_market">
+            <a class="details-button button" ui-sref="assets.assets_grid_market">
                 Spice the food
             </a>
         </div>

@@ -87,21 +87,17 @@ angular
 
             $scope.update = function(food) {
                 console.log(food.id)
-
                 var foodItem = $scope.assetdata.assets.filter(function(v) {
                     return v.id == food.id
                 })
                 food.foodItem = foodItem[0]
                 $scope.userService.selectedFood = $scope.selectedFood
-                //food.foodItem = $scope.assetdata.assets[1]
-                // use $scope.selectedItem.code and $scope.selectedItem.name here
-                // for other stuff ...
             }
 
             $scope.selectedFood = [
-                {title: "Please chose one item from the menu", foodItem: {}},
-                {title: "Please chose one item from the menu", foodItem: {}},
-                {title: "Please chose one item from the menu", foodItem: {}}
+                {id: "", foodItem: {}},
+                {id: "", foodItem: {}},
+                {id: "", foodItem: {}}
             ]
         }
         $scope.assetData();
